@@ -29,7 +29,7 @@ Strapped for time? Try this:
 
 **To save data from the wireless, sysinfo, and heartbeat plugins locally:**
 
-    snoopy -v -m wifi:mon=True -m sysinfo -m heartbeat -d myDrone -l London
+    snoopy -v -m wifi:iface=wlan1,mon=True -m sysinfo -m heartbeat -d mySled -l NorthPole
 
 **To sync data from a client to a server:**
  
