@@ -65,7 +65,8 @@ echo "[+] Downloading pylibpcap..."
 apt-get install python-libpcap
 
 echo "[+] Downloading dpkt..."
-pip install https://pypi.python.org/packages/fa/d4/3f2d61b11c82d4e17b06dfeafb2e03f561fdf7158d5e5e846524cf3328d6/dpkt-1.8.8.tar.gz#md5=a7a1cdb94484941b10057b701c0d0c57
+#pip install https://pypi.python.org/packages/fa/d4/3f2d61b11c82d4e17b06dfeafb2e03f561fdf7158d5e5e846524cf3328d6/dpkt-1.8.8.tar.gz#md5=a7a1cdb94484941b10057b701c0d0c57
+pip install dpkt
 
 echo "[+] Removing existing scapy and installing patched version of scapy..."
 apt-get purge python-scapy
