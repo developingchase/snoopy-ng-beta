@@ -61,12 +61,14 @@ echo "[+] Installing pyserial 2.6"
 pip install https://pypi.python.org/packages/source/p/pyserial/pyserial-2.6.tar.gz
 
 echo "[+] Downloading pylibpcap..."
-pip install https://sourceforge.net/projects/pylibpcap/files/latest/download?source=files#egg=pylibpcap
+#pip install https://sourceforge.net/projects/pylibpcap/files/latest/download?source=files#egg=pylibpcap
+apt-get install python-libpcap
 
 echo "[+] Downloading dpkt..."
-pip install https://dpkt.googlecode.com/files/dpkt-1.8.tar.gz
+pip install https://pypi.python.org/packages/fa/d4/3f2d61b11c82d4e17b06dfeafb2e03f561fdf7158d5e5e846524cf3328d6/dpkt-1.8.8.tar.gz#md5=a7a1cdb94484941b10057b701c0d0c57
 
-echo "[+] Installing patched version of scapy..."
+echo "[+] Removing existing scapy and installing patched version of scapy..."
+apt-get purge python-scapy
 pip install ./setup/scapy-latest-snoopy_patch.tar.gz
 
 # Only run this on your client, not server:
